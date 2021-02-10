@@ -17,8 +17,8 @@ RUN     apt install -y default-mysql-server
 RUN     apt install -y nginx
 COPY    ./srcs/nginx.conf ./etc/nginx/sites-available/
 
-#Get WordPress config
-#COPY ./srcs/wp-config.php ./tmp
+#Get WordPress
+COPY ./srcs/wp-config.php ./tmp
 
 #Get default site
 COPY ./srcs/index.html ./tmp

@@ -1,12 +1,16 @@
 #!/bin/bash
 
 #Start MySQL
-service start mysql
+service mysql start
+echo "CREATE DATABASE wordpress;" | mysql -u root --skip-password
+echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost' WITH GRANT OPTION;" | mysql -u root --skip-password
+echo "update mysql.user set plugin='mysql_native_password' where user='root';" | mysql -u root --skip-password
+echo "FLUSH PRIVILEGES;" | mysql -u root --skip-password
 
 #Make website path
 mkdir /var/www/site_hanisha
 mv /tmp/index.html /var/www/site_hanisha
-mv /tmp/index.html /var/www/site_hanisha/index.html
+
 
 #Endble Config access
 chmod -R 755 /var/www/*
@@ -22,8 +26,9 @@ ln      -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
 cd tmp && wget -c http://wordpress.org/latest.tar.gz
 tar -xvzf latest.tar.gz
 rm -rf latest.tar.gz
-mv wordpress/ var/www/site_hanisha
+cd .. && mv tmp/wordpress/ var/www/site_hanisha
 mv /tmp/wp-config.php /var/www/site_hanisha/wordpress
+
 
 #Start services
 service start php-fpm start
