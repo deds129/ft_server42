@@ -8,18 +8,15 @@ echo "update mysql.user set plugin='mysql_native_password' where user='root';" |
 echo "FLUSH PRIVILEGES;" | mysql -u root --skip-password
 
 #Make website path
-mkdir /var/www/site_hanisha
 mv /tmp/index.html /var/www/site_hanisha
-
-
-#Endble Config access
-chmod -R 755 /var/www/*
 
 #SSL configurate
 openssl req -x509 -nodes -days 365 \
         -out /etc/ssl/certs/nginx-ssl.crt \
         -keyout /etc/ssl/nginx-private.key \
         -subj "/C=RU/ST=Russia/L=Kazan/O=School21/OU=hanisha/CN=localhost"
+
+#make site enable
 ln      -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
 
 #Wordpress configurate
@@ -27,11 +24,21 @@ cd tmp && wget -c http://wordpress.org/latest.tar.gz
 tar -xvzf latest.tar.gz
 rm -rf latest.tar.gz
 cd .. && mv tmp/wordpress/ var/www/site_hanisha
-mv /tmp/wp-config.php /var/www/site_hanisha/wordpress
+mv /tmp/wp-config.php /var/www/site_hanisha/wordpress/
 
+#Get phpMyAdmin
+mkdir phpmyadmin
+mv phpmyadmin /var/www/site_hanisha
+cd tmp
+wget -c https://files.phpmyadmin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.tar.gz
+tar -xvzf phpMyAdmin-4.9.0.1-all-languages.tar.gz
+rm -rf phpMyAdmin-4.9.0.1-all-languages.tar.gz
+cd .. && mv tmp/phpMyAdmin-4.9.0.1-all-languages /var/www/site_hanisha/phpmyadmin
+
+chmod -R 755 /var/www/*
 
 #Start services
-service start php-fpm start
+service php7.3-fpm start
 service nginx start
 
 #Deamon mode
