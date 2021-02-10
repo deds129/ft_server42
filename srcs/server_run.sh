@@ -34,6 +34,7 @@ wget -c https://files.phpmyadmin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-l
 tar -xvzf phpMyAdmin-4.9.0.1-all-languages.tar.gz
 rm -rf phpMyAdmin-4.9.0.1-all-languages.tar.gz
 cd .. && mv tmp/phpMyAdmin-4.9.0.1-all-languages /var/www/site_hanisha/phpmyadmin
+mv /tmp/config.inc.php /var/www/site_hanisha/phpmyadmin/phpMyAdmin-4.9.0.1-all-languages/
 
 chmod -R 755 /var/www/*
 

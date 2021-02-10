@@ -24,9 +24,8 @@ COPY    ./srcs/nginx.conf ./etc/nginx/sites-available/
 COPY ./srcs/wp-config.php ./tmp
 #Get default site from srcs
 COPY ./srcs/index.html ./tmp
-
-
-
+#Get default config phpMyAdmin
+COPY ./srcs/config.inc.php ./tmp
 
 # Add scripts to system
 COPY ./srcs/server_run.sh ./
