@@ -9,6 +9,7 @@ echo "FLUSH PRIVILEGES;" | mysql -u root --skip-password
 
 #Make website path
 mv /tmp/index.html /var/www/site_hanisha
+mv /tmp/ecole.jpg /var/www/site_hanisha
 
 #SSL configurate
 openssl req -x509 -nodes -days 365 \
@@ -27,15 +28,14 @@ cd .. && mv tmp/wordpress/ var/www/site_hanisha
 mv /tmp/wp-config.php /var/www/site_hanisha/wordpress/
 
 #Get phpMyAdmin
-mkdir phpmyadmin
 mv phpmyadmin /var/www/site_hanisha
-cd tmp
-wget -c https://files.phpmyadmin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.tar.gz
-tar -xvzf phpMyAdmin-4.9.0.1-all-languages.tar.gz
+cd tmp && wget -c https://files.phpmyadmin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.tar.gz
+tar -xvzf phpMyAdmin-4.9.0.1-all-languages.tar.gz && mv phpMyAdmin-4.9.0.1-all-languages phpmyadmin
 rm -rf phpMyAdmin-4.9.0.1-all-languages.tar.gz
-cd .. && mv tmp/phpMyAdmin-4.9.0.1-all-languages /var/www/site_hanisha/phpmyadmin
-mv /tmp/config.inc.php /var/www/site_hanisha/phpmyadmin/phpMyAdmin-4.9.0.1-all-languages/
+cd .. && mv tmp/phpmyadmin /var/www/site_hanisha/
+mv /tmp/config.inc.php /var/www/site_hanisha/phpmyadmin
 
+#Get rights
 chmod -R 755 /var/www/*
 
 #Start services
