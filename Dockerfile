@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Dockerfile                                         :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: hanisha <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/02/12 14:04:26 by hanisha           #+#    #+#              #
+#    Updated: 2021/02/12 14:06:29 by hanisha          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # Image
 FROM    debian:buster
 
@@ -26,9 +38,6 @@ COPY ./srcs/index.html ./tmp
 COPY ./srcs/ecole.jpg ./tmp
 #Get default config phpMyAdmin
 COPY ./srcs/config.inc.php ./tmp
-
-
-
 
 # Add scripts to system
 COPY ./srcs/server_run.sh ./
