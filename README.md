@@ -19,12 +19,12 @@ Docker must be installed on the computer to deploy the project
 
 * Just click "Go to localhost" (insecure)
 <p align="center">
-  <img src="https://github.com/deds129/ft_server42/blob/main/images/2.png" alt="drawing" width="720"/>
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/3.png" alt="drawing" width="720"/>
 </p>
 
 * Self-signed SSL certificate
 <p align="center">
-  <img src="https://github.com/deds129/ft_server42/blob/main/images/3.png" alt="drawing" width="720"/>
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/2.png" alt="drawing" width="720"/>
 </p>
 
 * Start page
