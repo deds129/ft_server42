@@ -13,37 +13,59 @@ Docker must be installed on the computer to deploy the project
 ```
 
 * After the start, such a window may appear (Google Chrome)
-![](https://github.com/deds129/ft_server42/tree/main/images/1.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/1.png" alt="drawing" width="720"/>
+</p>
 
 * Just click "Go to localhost" (insecure)
-![](https://github.com/deds129/ft_server42/tree/main/images/2.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/2.png" alt="drawing" width="720"/>
+</p>
 
 * Self-signed SSL certificate
-![](https://github.com/deds129/ft_server42/tree/main/images/3.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/3.png" alt="drawing" width="720"/>
+</p>
 
 * Start page
-![](https://github.com/deds129/ft_server42/tree/main/images/4.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/4.png" alt="drawing" width="720"/>
+</p>)
 
 * You can go to the WordPress admin panel by typing the path in the browser address bar https://localhost/wordpress it will throw you to wp_admin
-![](https://github.com/deds129/ft_server42/tree/main/images/5.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/5.png" alt="drawing" width="720"/>
+</p>
 
 * In the same way, you can go to phpMyAdmin
-![](https://github.com/deds129/ft_server42/tree/main/images/6.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/6.png" alt="drawing" width="720"/>
+</p>
 
 * New created page in wordpress
-![](https://github.com/deds129/ft_server42/tree/main/images/7.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/7.png" alt="drawing" width="720"/>
+</p>
 
 * Wordpress admin page
-![](https://github.com/deds129/ft_server42/tree/main/images/8.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/8.png" alt="drawing" width="720"/>
+</p>
 
 * phpMyAdmin page
-![](https://github.com/deds129/ft_server42/tree/main/images/9.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/9.png" alt="drawing" width="720"/>
+</p>
 
 It is also possible to disable / enable auto-index using scripts
 ```bash
 1) bash ~/autoindex_off.sh  
 2) bash ~/autoindex_on.sh 
 ```
-![](https://github.com/deds129/ft_server42/tree/main/images/10.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/10.png" alt="drawing" width="720"/>
+</p>
 
-![](https://github.com/deds129/ft_server42/tree/main/images/11.png)
+<p align="center">
+  <img src="https://github.com/deds129/ft_server42/blob/main/images/11.png" alt="drawing" width="420"/>
+</p>
