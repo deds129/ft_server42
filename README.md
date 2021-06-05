@@ -12,31 +12,31 @@ Docker must be installed on the computer to deploy the project
 2) docker run -it --rm -p 80:80 -p 443:443 --name <tagname> <tagname>
 ```
 
-After the start, such a window may appear (Google Chrome)
+* After the start, such a window may appear (Google Chrome)
 ![](https://github.com/deds129/ft_server42/tree/main/images/1.png)
 
-Just click "Go to localhost" (insecure)
+* Just click "Go to localhost" (insecure)
 ![](https://github.com/deds129/ft_server42/tree/main/images/2.png)
 
-Self-signed SSL certificate
+* Self-signed SSL certificate
 ![](https://github.com/deds129/ft_server42/tree/main/images/3.png)
 
-Start page
+* Start page
 ![](https://github.com/deds129/ft_server42/tree/main/images/4.png)
 
-You can go to the WordPress admin panel by typing the path in the browser address bar https://localhost/wordpress it will throw you to wp_admin
+* You can go to the WordPress admin panel by typing the path in the browser address bar https://localhost/wordpress it will throw you to wp_admin
 ![](https://github.com/deds129/ft_server42/tree/main/images/5.png)
 
-In the same way, you can go to phpMyAdmin
+* In the same way, you can go to phpMyAdmin
 ![](https://github.com/deds129/ft_server42/tree/main/images/6.png)
 
-New created page in wordpress
+* New created page in wordpress
 ![](https://github.com/deds129/ft_server42/tree/main/images/7.png)
 
-Wordpress admin page
+* Wordpress admin page
 ![](https://github.com/deds129/ft_server42/tree/main/images/8.png)
 
-phpMyAdmin page
+* phpMyAdmin page
 ![](https://github.com/deds129/ft_server42/tree/main/images/9.png)
 
 It is also possible to disable / enable auto-index using scripts
